@@ -3,7 +3,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-   "patients",
+  await queryInterface.bulkInsert(  "patients",
      [
        {
          ss: 3208140624,
@@ -13,7 +13,7 @@ module.exports = {
          dateAdmitted: 4/24/2023,
          dateCheckOut: 4/24/2023,
        },
-     ],
+     ]),
      {}
   },
 
